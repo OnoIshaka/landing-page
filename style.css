@@ -1,11 +1,10 @@
 * {
     font-family: roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-img{
-    width: 300px;
-    height: auto;
 
-}
 .first, .footer {
     background-color: #1F2937;
 }
@@ -16,13 +15,9 @@ h1 {
     color: #f9faf8;
 }
 
-.web>p {
+.hero p {
        font-size: 18px;
        color: #e5e7eb;
-}
-
-ul {
-
 }
 
 a {
@@ -36,29 +31,31 @@ li {
 
 .logo {
     font-size: 24px;
+    font-weight: bolder;
     color: #f9faf8;
 }
 
-.second>h2 {
+.container h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    text-align: center;
 }
 
 .square {
     border-radius: 25px;
   border: 2px solid #3882f6;
-  padding: 20px;
+  padding: 10px;
   width: 150px;
   height: 150px; 
 }
 
-.third>p {
+.third .container p {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
 }
-.third>h3 {
+.third .container h3 {
     
     font-size: 24px;
 }
@@ -67,18 +64,107 @@ li {
     
 }
 
-.action {
+.fourth {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.fourth .container {
     border-radius: 25px;
   background: #3882f6;
   padding: 20px;
   width: 800px;
   height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.action>button {
+.container button {
     border: 1px solid #f9faf8;
     border-radius: 12px;
     color: #f9faf8;
     background-color: #3882f6;
-    padding: 5px;
+    padding: 15px;
+}
+
+ .third .container {
+     display: flex;
+     /* flex-direction: column; */
+     flex-wrap: wrap;
+     /* text-align: center; */
+     align-items: center;
+     justify-content: flex-end;
+ }
+
+ 
+
+body {
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    
+}
+
+.header ul li {
+    margin-left: 20px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.web {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.web img {
+    max-width: 500px;
+    height: auto;
+}
+
+.hero {
+    padding: 10px;
+    width: 500px;
+}
+
+.squares {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    
+}
+
+.second .container{
+    
+    padding: 20px;
+}
+
+.third .container {
+    min-height: 350px;
+}
+
+
+.footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9faf8;
 }
